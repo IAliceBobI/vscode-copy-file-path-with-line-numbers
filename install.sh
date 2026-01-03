@@ -1,9 +1,16 @@
-yarn;
-yarn postinstall;
-vsce package;
-if [ -z "$1" ]; then
-    code --install-extension copy-relative-path-and*.vsix --force;
-else
-    code-insiders --install-extension copy-relative-path-and*.vsix --force;
-fi
+#!/bin/bash
+set -e
 
+echo "Installing dependencies..."
+npm install
+
+echo ""
+echo "Packaging extension..."
+npx vsce package -o extension.vsix
+
+echo ""
+echo "Installing to VS Code..."
+code --install-extension extension.vsix --force
+
+echo ""
+echo "Installation complete!"

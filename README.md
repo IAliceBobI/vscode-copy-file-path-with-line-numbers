@@ -4,7 +4,7 @@ Support multiple cursors.
 
 Accessible through right-clicking menu items in file explorer, tabs and main editor window.
 
-Commands: `copy-relative-path-and-line-numbers.both` & `copy-relative-path-and-line-numbers.path-only`
+Commands: `copy-relative-path-and-line-numbers-fork.both` & `copy-relative-path-and-line-numbers-fork.path-only`
 
 Default shortcut key: `ctrl+l`(MacOS), `alt+l`(Windows/Linux)
 

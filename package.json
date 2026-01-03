@@ -1,10 +1,9 @@
 {
-    "name": "copy-relative-path-and-line-numbers",
+    "name": "copy-relative-path-and-line-numbers-fork",
     "displayName": "Copy Relative Path and Line Numbers",
     "description": "Support multiple cursors. Accessible through right-clicking menu items in file explorer, tabs and main editor window.",
     "version": "0.2.8",
-    "publisher": "ezforo",
-    "repository": {},
+    "publisher": "local-fork",
     "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.20.0"

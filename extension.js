@@ -3,6 +3,16 @@
 const vscode = require("vscode");
 const clipboardy = require("clipboardy");
 
+// Disable auto-update check for this local fork
+const myExtension = vscode.extensions.getExtension("local-fork.copy-relative-path-and-line-numbers-fork");
+if (myExtension) {
+  myExtension.packageJSON = myExtension.packageJSON || {};
+  myExtension.packageJSON.__metadata = myExtension.packageJSON.__metadata || {};
+  myExtension.packageJSON.__metadata.galleryApiUrl = "";
+  myExtension.packageJSON.__metadata.updateUrl = "";
+  myExtension.packageJSON.__metadata.repositoryUrl = "";
+}
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function activate(context) {
